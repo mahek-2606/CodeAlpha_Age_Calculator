@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: url(https://www.freecodecamp.org/news/content/images/2021/06/w-qjCHPZbeXCQ-unsplash.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+    }
+    
+    .container {
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+<script>
+    function calculate(){
+        var dobInput = (document.getElementById('dob').value);
+        var dob = new Date(dobInput);
+        var now = new Date();
+        
+        var age = now.getFullYear() - dob.getFullYear();
+        var m = now.getMonth() - dob.getMonth();
+        if(m < 0 || (m === 0 && now.getDate() < dob.getDate())) {
+                 age--;  
+            }
+        document.getElementById('age').innerText="Your age is " + age;
+    }
+</script>
+<body>
+    <div class="container" >
+        <h1 style="color: maroon;">CALCULATE YOUR AGE</h1>
+    <table cellpadding="8" cellspacing="10" border="4" align="center">
+        <tr align="left">
+            <th style="font-size: larger;">Enter Your DOB</th>
+            <th><input type="date" id="dob"></th>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;"><input type="button" value="CALCULATE" onclick="calculate()"/></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+            <h4 style="color:maroon; font-size: 20px;" id="age"></h4>
+            </td>
+        </tr>
+    </table> 
+    </div>
+</body>
+</html>
