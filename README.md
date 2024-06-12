@@ -1,7 +1,7 @@
 # AGE CALCULATOR
 
 ![Task 1 output](https://github.com/mahek-2606/CodeAlpha_Age_Calculator/assets/171167105/5c821aff-2936-4974-948a-f36898d012ff)
-
+This web page allows users to input their date of birth and then calculates their age based on the current date.
 The process involves:
 
 1) Parsing the input date of birth.
