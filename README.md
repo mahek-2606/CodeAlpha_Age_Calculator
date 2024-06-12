@@ -1,2 +1,2 @@
-This is a program designed to determine a person's age based on their date of birth and the current date.
-The web page developed allows users to input their date of birth and then calculates their age based on the current date.
+![Alt text]([URL_to_image](https://github.com/mahek-2606/CodeAlpha_Age_Calculator/blob/main/output.png?raw=true))
+
